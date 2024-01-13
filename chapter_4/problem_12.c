@@ -3,7 +3,7 @@
 
 int main() {
     char str[100];
-    int i = 0, j, length = 0;
+    int i = 0, j = 0, length = 0;
 
     system("cls");
     printf("\n Enter the string : ");
