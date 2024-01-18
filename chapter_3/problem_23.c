@@ -4,7 +4,7 @@
 int main() {
     int i, j, k;
     int rows1, cols1, rows2, cols2, res_rows, res_cols;
-    int mat1[5][5], mat2[5][5], res(5][5];
+    int mat1[5][5], mat2[5][5], res[5][5];
 
     printf("\n Enter the number of rows in the first matrix ");
     scanf("%d", &rows1);
