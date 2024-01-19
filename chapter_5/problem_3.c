@@ -30,7 +30,7 @@ int main() {
     printf("\n ROLL No. = %d", stud1.roll_no);
     printf("\n NAME = %s", stud1.name);
     printf("\n FEES = %f", stud1.fees);
-    printf("\n DOB = %d - %d - %d", stud1.date.day, stud1.date.month, stud1.date.year,);
+    printf("\n DOB = %d - %d - %d", stud1.date.day, stud1.date.month, stud1.date.year);
     getch();
     
     return 0;
