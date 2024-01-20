@@ -33,7 +33,7 @@ int main() {
     }
 
     for(i = 0; i < n; i++){
-        printf("\n ********DETAILS OF STUDENT %d*******", i + 1);
+        printf("\n ********DETAILS OF STUDENT %d******* ", i + 1);
         printf("\n ROLL No. = %d", stud[i].roll_no);
         printf("\n NAME = %s", stud[i].name);
         printf("\n FEES = %f", stud[i].fees);
@@ -60,7 +60,7 @@ int main() {
     strcpy(stud[num].DOB, new_DOB);
 
     for(i = 0; i < n; i++){
-        printf("\n ********DETAILS OF STUDENT %d*******", i + 1);
+        printf("\n ********DETAILS OF STUDENT %d******* ", i + 1);
         printf("\n ROLL No. = %d", stud[i].roll_no);
         printf("\n NAME = %s", stud[i].name);
         printf("\n FEES = %f", stud[i].fees);
