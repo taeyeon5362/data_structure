@@ -9,35 +9,27 @@ struct student {
 };
 void display(struct student*);
 
- ----------------수정 필요----------------------
-
 int main() {
-    int i, n;
- 
-    struct student stud1, *ptr_stud1;
-    system("cls");
-
-    ptr_stud1 = &stud1;
-  
-    printf("\n Enter the details of the student : ");
-    printf("\n Enter the Roll Number = ");
-    scanf("%d", &ptr_stud1->r_no);
-    
-    gets(ptr_stud1->name);
-    printf("\n Enter the Name = ");
-    gets(ptr_stud1->name);
-
-    printf("\n Enter the Course = ");
-    gets(ptr_stud1->course);
-  
-    printf("\n Enter the Fees = ");
-    scanf("%d", &ptr_stud1->fees);
-
-    printf("\n DETAILS OF THE STUDENT ");
-    printf("\n ROLL NUMBER = %d", ptr_stud1->r_no);
-    printf("\n NAME = %s", ptr_stud1->name);
-    printf("\n COURSE = %s", ptr_stud1->course);
-    printf("\n FEES = %d", ptr_stud1->fees);
-    
-    return 0;
+        struct student* ptr;
+        ptr = (struct student*)malloc(sizeof(struct student));
+        printf("\n Enter the date for the students : ");
+        printf("\n ROLL NO. : ");
+        scanf("%d", &ptr->r_no);
+        gets(ptr->name);
+        printf("\n NAME = ");
+        gets(ptr->name);
+        printf("\n COURSE : ");
+        gets(ptr->course);    
+        printf("\n FEES : ");
+        scanf("%d", &ptr->fees);
+        display(ptr);
+        getch();
+        return 0;
+}
+void display(struct student* ptr){
+    printf("\n DETAILS OF THE STUDENTS ");
+    printf("\n ROLL NO. = %d", ptr->r_no);
+    printf("\n NAME = %s", ptr->name);
+    printf("\n COURSE = %s", ptr->course);
+    printf("\n FEES = %d", ptr->fees);
 }
