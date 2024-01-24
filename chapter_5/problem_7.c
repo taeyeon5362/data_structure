@@ -11,31 +11,30 @@ struct student* ptr_stud[10];
 
 int main() {
     int i, n;
-  ----------------수정 필요----------------------
-    struct student stud1, *ptr_stud1;
-    system("cls");
+    printf("\n Enter the numbers of students : ");
+    scanf("%d", &n);    
 
-    ptr_stud1 = &stud1;
-  
-    printf("\n Enter the details of the student : ");
-    printf("\n Enter the Roll Number = ");
-    scanf("%d", &ptr_stud1->r_no);
-    
-    gets(ptr_stud1->name);
-    printf("\n Enter the Name = ");
-    gets(ptr_stud1->name);
-
-    printf("\n Enter the Course = ");
-    gets(ptr_stud1->course);
-  
-    printf("\n Enter the Fees = ");
-    scanf("%d", &ptr_stud1->fees);
+    for(i = 0; i < n; i++) {
+            ptr_studi[i] = (struct student*)malloc(sizeof(struct student));
+            printf("\n Enter the date for student %d", i + 1);
+            printf("\n ROLL NO. : ");
+            scanf("%d", &ptr_stud[i]->r_no);
+            gets(ptr_stud[i]->name);
+            printf("\n NAME = ");
+            gets(ptr_stud[i]->name);
+            printf("\n COURSE : ");
+            gets(ptr_stud[i]->course);    
+            printf("\n FEES : ");
+            scanf("%d", &ptr_stud[i]->fees);
+    }    
 
     printf("\n DETAILS OF THE STUDENT ");
-    printf("\n ROLL NUMBER = %d", ptr_stud1->r_no);
-    printf("\n NAME = %s", ptr_stud1->name);
-    printf("\n COURSE = %s", ptr_stud1->course);
-    printf("\n FEES = %d", ptr_stud1->fees);
+    for(i = 0; i < n; i++) {
+            printf("\n ROLL NO. = %d", ptr_stud[i]->r_no);
+            printf("\n NAME = %s", ptr_stud[i]->name);
+            printf("\n COURSE = %s", ptr_stud[i]->course);
+            printf("\n FEES = %d", ptr_stud[i]->fees);
+    }    
     
     return 0;
 }
