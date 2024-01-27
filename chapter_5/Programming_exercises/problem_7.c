@@ -2,7 +2,7 @@
 
 struct tell_number {
         char name[10];
-        char age[10]
+        char age[10];
 };
 
 int main() {
