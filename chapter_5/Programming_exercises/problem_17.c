@@ -4,34 +4,44 @@ struct hotel {
         char name;
         char address;
         int grade;
-};
-
-
-------------수정필요----------------
-
-void display(struct student*);
+        int roomnumber;
+        int charge;
+}HOTEL[20];
+void grading(int num);
+void charging(int num);
 
 int main() {
-        struct student* ptr;
-        ptr = (struct student*)malloc(sizeof(struct student));
-        printf("\n Enter the date for the students : ");
-        printf("\n ROLL NO. : ");
-        scanf("%d", &ptr->r_no);
-        gets(ptr->name);
-        printf("\n NAME = ");
-        gets(ptr->name);
-        printf("\n COURSE : ");
-        gets(ptr->course);    
-        printf("\n FEES : ");
-        scanf("%d", &ptr->fees);
-        display(ptr);
-        getch();
-        return 0;
+        int n = 0;
+        scanf("%d", &n);
+
+        for(int i = 0; i < n; i++) {
+                printf("\n Enter the hotel name : ");
+                gets(HOTEL[i].name);
+                printf("\n Enter the hotel address : ");
+                gets(HOTEL[i].address);
+                printf("\n Enter the hotel grade : ");
+                gets(HOTEL[i].grade);
+                printf("\n Enter the hotel room number: ");
+                gets(HOTEL[i].roomnumber);
+                printf("\n Enter the hotel name : ");
+                gets(HOTEL[i].charge);
+        }
+        grading(n);
+        charging(n);
 }
-void display(struct student* ptr){
-    printf("\n DETAILS OF THE STUDENTS ");
-    printf("\n ROLL NO. = %d", ptr->r_no);
-    printf("\n NAME = %s", ptr->name);
-    printf("\n COURSE = %s", ptr->course);
-    printf("\n FEES = %d", ptr->fees);
+void grading(int num) {
+        int par_grade = 0;
+        scanf("%d", &par_grade);
+        for(int i = 0; i < num; i++) {
+                if(HOTEL[i].grade == par_grade)
+                        printf("%s\n", HOTEL[i].name);
+        }
+}
+void charging(int num){
+        int par_charge = 0;
+        scanf("%d", &par_charge);
+        for(int i = 0; i < num; i++) {
+                if(HOTEL[i].vharge == par_charge)
+                        printf("%s\n", HOTEL[i].name);
+        }
 }
