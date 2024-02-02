@@ -13,6 +13,10 @@ int main() {
         val[0] = val[2];
         val[2] = temp;
 
+        temp = val[1];
+        val[1] = val[2];
+        val[2] = temp;
+
         printf("\n---AFTER\n");
         for(int i = 0; i < 3; i++) {
               printf("\t%c", val[i]);
