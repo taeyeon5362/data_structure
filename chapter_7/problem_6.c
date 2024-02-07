@@ -15,5 +15,5 @@ int F(int x, int y) {
         if(x < y)
                 return 0;
         else if(y == x)
-                return (F(n - 1, r) + F(n - 1, r - 1));
+                return (F(x - y, y) + 1);
 }
