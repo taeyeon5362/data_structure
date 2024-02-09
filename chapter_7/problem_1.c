@@ -6,7 +6,7 @@ struct stack {
         struct stack* next;
 }
 
-struct stack* top = .NULL;
+struct stack* top = NULL;
 struct stack* push(struct stack*);
 struct stack* pop(struct stack*);
 struct stack* display(struct stack*);
