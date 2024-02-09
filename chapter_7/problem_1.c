@@ -73,7 +73,7 @@ struct stack* display(struct stack* top) {
         ptr = top;
 
         if(top == NULL) {
-                printf(\n STACK IS EMPTY");
+                printf("\n STACK IS EMPTY");
         }
         else {
                 while(ptr != NULL) {
