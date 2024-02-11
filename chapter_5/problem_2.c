@@ -25,7 +25,7 @@ int main() {
             case 1 :
                 printf("\n Enter the real and imaginary parts of the first complex number : ");
                 scanf_s("%d %d", &c1.real, &c1.imag);
-                printf("\n Enter the real and imaginary parts of the first second number : ");
+                printf("\n Enter the real and imaginary parts of the second complex number : ");
                 scanf_s("%d %d", &c2.real, &c2.imag);
             case 2 :
                 printf("\n The first complex number is : %d+%di ", c1.real, c1.imag);
