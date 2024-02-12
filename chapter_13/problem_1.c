@@ -14,14 +14,14 @@ void createGraph(struct node *adj[], int no_of_nodes);
 int main() {
     struct node *Adj[10];
     int i, no_of_nodes;
-    printf("\n Enter the number of nodes in G: ");
+    printf("\n Enter the number of nodes in G : ");
     scanf("%d", &no_of_nodes);
 
     for(i = 0; i < no_of_nodes; i++)
         Adj[i] = NULL;
 
     createGraph(Adj, no_of_nodes);
-    printf("\n The graph is: ");
+    printf("\n The graph is : ");
     displayGraph(Adj, no_of_nodes);
     deleteGraph(Adj, no_of_nodes);
     getch();
