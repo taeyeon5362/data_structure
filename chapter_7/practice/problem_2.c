@@ -45,7 +45,7 @@ int main(int argc, char* argv[]) {
                         top = display(top);
                         break;
                 }
-        }while(option != 4)
+        }while(option != 5)
 }
 
 struct stack* push(struct stack* top, int val) {
