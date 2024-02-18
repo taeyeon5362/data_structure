@@ -38,7 +38,6 @@ int main() {
                 }
         }while(option != 4)
 }
-
 struct stack* push(struct stack* top, int val) {
         struct stack* ptr;
         ptr = (struct stack*)malloc(sizeof(struct stack));
