@@ -30,7 +30,7 @@ int main() {
         }
         if(top >= 0)
                   flag = 0;
-        if(flag == 1);
+        if(flag == 1)
                   printf("\n Valid expression");
         else
                   printf("\n invalid expression");
