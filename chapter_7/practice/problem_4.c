@@ -32,5 +32,5 @@ void push(int val){
         stk[++top] = val;
 }
 int pop() {
-        return(stk[top--])l-;
+        return(stk[top--]);
 }
