@@ -17,6 +17,7 @@ void inorder(struct node *root) {
         printf("%d ", root->key);
         inorder(root->right);
     }
+    
 }
 struct node* insert(struct node* node, int key) {
     if(node == NULL) return newNode(key);
