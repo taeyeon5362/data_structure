@@ -11,7 +11,7 @@ int main() {
         char a[20];
         printf("Enter the string : ");
         scanf("%s", &a);
-
+        
         reverse(a);
         return 0;
 }
