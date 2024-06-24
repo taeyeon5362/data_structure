@@ -41,6 +41,7 @@ int main() {
     } while (option != 5);
     getch();
     return 0;
+    }
 }
 
 void insert() {
