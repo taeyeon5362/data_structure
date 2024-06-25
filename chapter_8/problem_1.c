@@ -22,25 +22,25 @@ int main() {
     scanf("%d", &option);
 
     swith(option) {
-      case 1:
-        insert();
-        break;
-      case 2:
-        val = delete_element();
-        if(val != -1)
-          printf("\n The number deleted is : %d", val);
-        break;
-      case 3:
-        val = peek();
-        if(val != -1)
-          printf("\n The first value in the queue is : %d", val);
-      case 4 :
-        display();
-        break;
+        case 1:
+          insert();
+          break;
+          case 2:
+          val = delete_element();
+          if(val != -1)
+            printf("\n The number deleted is : %d", val);
+          break;
+        case 3:
+          val = peek();
+          if(val != -1)
+            printf("\n The first value in the queue is : %d", val);
+        case 4 :
+          display();
+          break;
                 
-    } while (option != 5);
-    getch();
-    return 0;
+      } while (option != 5);
+      getch();
+      return 0;
     }
 }
 
