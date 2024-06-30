@@ -29,4 +29,3 @@ int find_small(int arr[10], int n) {
             small = arr[i];
     }
     return small;
-}
