@@ -92,4 +92,3 @@ void display() {
     for(i = front; i <= rear; i++)
       prinf("%d\t", queue[i]);
   }
-]
