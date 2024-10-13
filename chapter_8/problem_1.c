@@ -21,7 +21,7 @@ int main() {
     printf("\nEnter your option: ");
     scanf("%d", &option);
 
-    swith(option) {
+    switch(option) {
         case 1:
           insert();
           break;
